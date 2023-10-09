@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root {
+    /*Cores*/
+    --cor-background: #595880;
+    --cor-background-secundario: #a6a4ed;
+    --cor-clara: #ffffff;
+    --cor-texto: #030303;
+    --gradiente-desktop: linear-gradient(-233deg, #000 40%, rgba(0, 0, 0, 0) 65%) no-repeat;
+
+    /*Fontes*/
+    --fonte-principal: 'Poppins', sans-serif;
+    --fonte-secundaria: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--cor-background);
+}
+
+.container {
+    position: relative;
+    width: 400px;
+    height: 105px;
+    background: var(--cor-clara);
+    padding: 28px 32px;
+    overflow: hidden;
+    border-radius: 18px;
+    font-size: var(--fonte-secundaria);
+    transition: 0.6s ease-out;
+}
+
+.caixa-pesquisa {
+    width: 100%;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.caixa-pesquisa i {
+    position: absolute;
+    color: var(--cor-texto);
+    font-size: 28px;
+}
+
+.caixa-pesquisa input {
+    color: var(--cor-texto);
+    width: 80%;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-left: 32px;
+    
+}
+
+.caixa-pesquisa input::placeholder {
+    color: var(--cor-texto);
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: initial;
+}
+
+.caixa-pesquisa button {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    color: var(--cor-texto);
+    background: var(--cor-background-secundario);
+    border-radius: 50%;
+    font-size: 22px;
+    transition: 0.5s ease;
+}
+
+.caixa-pesquisa button:hover {
+    color: var(--cor-background-secundario);
+    background: var(--cor-texto);
+}
+
+.caixa-clima {
+    text-align: center;
+    /* scale: 0;
+    opacity: 0; */
+    display: none;
+}
+
+.caixa-clima img {
+    width: 60%;
+    margin-top: 30px;
+}
+
+.caixa-clima .temperatura {
+    position: relative;
+    color: var(--cor-texto);
+    font-size: 4rem;
+    font-weight: 800;
+    margin-top: 30px;
+    margin-left: -16px;
+}
+
+.caixa-clima .temperatura span {
+    position: absolute;
+    margin-left: 4px;
+    font-size: 1.5rem;
+}
+
+.caixa-clima .descricao {
+    color: var(--cor-texto);
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: initial;
+}
+
+.detalhes-clima {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    /* scale: 0;
+    opacity: 0; */
+    display: none;
+}
+
+.detalhes-clima .umidade,
+.detalhes-clima .vento {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100px;
+}
+
+.detalhes-clima .umidade {
+    padding-left: 20px;
+    justify-content: flex-start;
+
+}
+
+.detalhes-clima .vento {
+    padding-right: 20px;
+    justify-content: flex-end;
+}
+
+.detalhes-clima i {
+    color: var(--cor-texto);
+    font-size: 36px;
+    margin: 6px 10px 0 0;
+}
+
+.detalhes-clima span {
+    color: var(--cor-texto);
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.detalhes-clima p {
+    color: var(--cor-texto);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.nao-encontrado {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    /* scale: 0;
+    opacity: 0; */
+    display: none;
+}
+
+.nao-encontrado img {
+    width: 80%;
+
+}
+
+.nao-encontrado p {
+    color: var(--cor-texto);
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 12px;
+}
+
+.fade-in {
+    animation: 0.5s fadeIn forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}
