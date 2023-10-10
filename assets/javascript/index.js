@@ -38,23 +38,23 @@ pesquisa.addEventListener('click', () => {
 
             switch (json.weather[0].main) {
                 case 'Clear':
-                    imagem.src = './assets/img/clear.png';
+                    imagem.src = './assets/img/limpo.png';
                     break;
 
                 case 'Rain':
-                    imagem.src = './assets/img/rain.png';
+                    imagem.src = './assets/img/chuvoso.png';
                     break;
 
                 case 'Snow':
-                    imagem.src = './assets/img/snow.png';
+                    imagem.src = './assets/img/neve.png';
                     break;
 
                 case 'Clouds':
-                    imagem.src = './assets/img/cloud.png';
+                    imagem.src = './assets/img/nublado.png';
                     break;
 
                 case 'Haze':
-                    imagem.src = './assets/img/haze.png';
+                    imagem.src = './assets/img/nevoa.png';
                     break;
 
                 default:
