@@ -4,7 +4,7 @@
     /*Cores*/
     --cor-background: #595880;
     --cor-background-secundario: #a6a4ed;
-    --cor-clara: #ffffff;
+    --cor-clara: #eaf9a0;
     --cor-texto: #030303;
     --gradiente-desktop: linear-gradient(-233deg, #000 40%, rgba(0, 0, 0, 0) 65%) no-repeat;
 
@@ -49,6 +49,7 @@ body {
 
 .caixa-pesquisa input {
     color: var(--cor-texto);
+    background: var(--cor-clara);
     width: 80%;
     font-size: 24px;
     font-weight: 500;
@@ -85,14 +86,15 @@ body {
 }
 
 .caixa-clima img {
-    width: 60%;
-    margin-top: 30px;
+    width: 65%;
+    margin-top: 5px;
 }
 
 .caixa-clima .temperatura {
     position: relative;
     color: var(--cor-texto);
-    font-size: 4rem;
+    font-size: 4.2rem;
+    font-family: var(--fonte-secundaria);
     font-weight: 800;
     margin-top: 30px;
     margin-left: -16px;
@@ -100,15 +102,16 @@ body {
 
 .caixa-clima .temperatura span {
     position: absolute;
-    margin-left: 4px;
+    margin: 5px 0 0 5px;
     font-size: 1.5rem;
 }
 
 .caixa-clima .descricao {
     color: var(--cor-texto);
+    font-family: var(--fonte-principal);
     font-size: 22px;
     font-weight: 500;
-    text-transform: initial;
+    text-transform: capitalize;
 }
 
 .detalhes-clima {
@@ -139,7 +142,7 @@ body {
 
 .detalhes-clima i {
     color: var(--cor-texto);
-    font-size: 26px;
+    font-size: 25px;
     margin: 6px 10px 0 0;
 }
 
@@ -147,12 +150,14 @@ body {
     color: var(--cor-texto);
     font-size: 22px;
     font-weight: 500;
+    font-family: var(--fonte-secundaria);
 }
 
 .detalhes-clima p {
     color: var(--cor-texto);
     font-size: 14px;
     font-weight: 500;
+    font-family: var(--fonte-principal);
 }
 
 .nao-encontrado {
@@ -170,6 +175,7 @@ body {
 
 .nao-encontrado p {
     color: var(--cor-texto);
+    font-family: var(--fonte-secundaria);
     font-size: 22px;
     font-weight: 500;
     margin-top: 12px;
