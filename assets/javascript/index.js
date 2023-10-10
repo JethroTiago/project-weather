@@ -13,7 +13,7 @@ pesquisa.addEventListener('click', () => {
         return;
     }
 
-    const endpoint = `https://api.openweathermap.org/data/2.5/weather?q=${cidade}&appid=${APIKey}&lang={pt_br}`;
+    const endpoint = `https://api.openweathermap.org/data/2.5/weather?q=${cidade}&lang=pt_br&appid=${APIKey}&units=metric`;
     fetch(endpoint)
         .then(res => res.json())
         .then(json => {
