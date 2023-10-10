@@ -10,37 +10,37 @@
 </head>
 <body>
 
-    <div class="container">
-        <div class="caixa-pesquisa">
+    <div class="container" id="container">
+        <div class="caixa-pesquisa" id="caixa-pesquisa">
             <i class="fa-solid fa-location-dot"></i>
-            <input type="text" placeholder="Digite a localização">
-            <button class="fa-solid fa-magnifying-glass"></button>
+            <input type="text" id="caixa-pesquisa-input" placeholder="Digite a localização">
+            <button class="fa-solid fa-magnifying-glass" id="caixa-pesquisa-botao"></button>
         </div>
         
-        <div class="caixa-clima">
-            <img src="">
-            <p class="temperatura"></p>
-            <p class="descricao"></p>
+        <div class="caixa-clima" id="caixa-clima">
+            <img id="caixa-clima-img" src="">
+            <p class="temperatura" id="temperatura"></p>
+            <p class="descricao" id="descricao"></p>
         </div>
         
-        <div class="detalhes-clima">
+        <div class="detalhes-clima" id="detalhes-clima">
             <div class="umidade">
                 <i class="fa-solid fa-droplet"></i>
                 <div class="text">
-                    <span></span>
+                    <span id="umidade-span"></span>
                     <p>Umidade</p>
                 </div>
             </div>
             <div class="vento">
                 <i class="fa-solid fa-fan"></i>
                 <div class="text">
-                    <span></span>
+                    <span id="vento-span"></span>
                     <p>Velocidade do vento</p>
                 </div>
             </div>
         </div>
         
-        <div class="nao-encontrado">
+        <div class="nao-encontrado" id="nao-encontrado">
             <img src="/assets/img/error-404.png" alt="Mensagem de Error 404">
             <p>Oops! Localização inválida!</p>
         </div>
