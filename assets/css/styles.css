@@ -82,9 +82,6 @@ body {
 
 .caixa-clima {
     text-align: center;
-    /* scale: 0;
-    opacity: 0; */
-    display: none;
 }
 
 .caixa-clima img {
@@ -119,9 +116,6 @@ body {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
-    /* scale: 0;
-    opacity: 0; */
-    display: none;
 }
 
 .detalhes-clima .umidade,
@@ -145,7 +139,7 @@ body {
 
 .detalhes-clima i {
     color: var(--cor-texto);
-    font-size: 36px;
+    font-size: 26px;
     margin: 6px 10px 0 0;
 }
 
@@ -165,14 +159,13 @@ body {
     width: 100%;
     text-align: center;
     margin-top: 50px;
-    /* scale: 0;
-    opacity: 0; */
+    scale: 0;
+    opacity: 0;
     display: none;
 }
 
 .nao-encontrado img {
     width: 80%;
-
 }
 
 .nao-encontrado p {
@@ -182,7 +175,13 @@ body {
     margin-top: 12px;
 }
 
-.fade-in {
+.caixa-clima,
+.detalhes-clima {
+    scale: 0;
+    opacity: 0;
+}
+
+.fadeIn {
     animation: 0.5s fadeIn forwards;
     animation-delay: 0.5s;
 }
