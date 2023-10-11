@@ -6,7 +6,6 @@
     --cor-background-secundario: #a6a4ed;
     --cor-clara: #eaf9a0;
     --cor-texto: #030303;
-    --gradiente-desktop: linear-gradient(-233deg, #000 40%, rgba(0, 0, 0, 0) 65%) no-repeat;
 
     /*Fontes*/
     --fonte-principal: 'Poppins', sans-serif;
@@ -46,7 +45,7 @@ body {
 
 .caixa-pesquisa i {
     position: absolute;
-    color: var(--cor-texto);
+    color: #aa1515;
     font-size: 28px;
 }
 
@@ -58,7 +57,6 @@ body {
     font-weight: 500;
     text-transform: uppercase;
     padding-left: 32px;
-    
 }
 
 .caixa-pesquisa input::placeholder {
@@ -91,6 +89,7 @@ body {
 .caixa-clima img {
     width: 65%;
     margin-top: 5px;
+    border-radius: 10px;
 }
 
 .caixa-clima .temperatura {
@@ -135,7 +134,6 @@ body {
 .detalhes-clima .umidade {
     padding-left: 20px;
     justify-content: flex-start;
-
 }
 
 .detalhes-clima .vento {
