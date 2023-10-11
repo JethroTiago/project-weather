@@ -6,9 +6,13 @@
     .caixa-pesquisa i {
         font-size: 20px;
     }
+
+    .caixa-pesquisa input::placeholder {
+        font-size: 12px;
+    }
     
     .caixa-pesquisa input {
-        font-size: 22px;        
+        font-size: 18px;        
     }
 
     .caixa-clima .temperatura {
