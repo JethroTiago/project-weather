@@ -1,0 +1,39 @@
+@media (max-width: 431px) {
+    .container {
+        width: 80%;
+    }
+
+    .caixa-pesquisa i {
+        font-size: 20px;
+    }
+    
+    .caixa-pesquisa input {
+        font-size: 22px;        
+    }
+
+    .caixa-clima .temperatura {
+        font-size: 3.5rem;
+    }
+
+    .caixa-clima .temperatura span {
+        font-size: 1.3rem;
+    }
+
+    .caixa-pesquisa button {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .detalhes-clima i {
+        font-size: 20px;
+    }
+
+    .detalhes-clima span {
+        font-size: 18px;
+    }
+    
+    .detalhes-clima p {
+        font-size: 12px;
+    }
+}
