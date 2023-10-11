@@ -54,7 +54,7 @@ pesquisa.addEventListener('click', () => {
                     break;
 
                 case 'Haze':
-                    imagem.src = './assets/img/nevoa.png';
+                    imagem.src = './assets/img/vento.png';
                     break;
 
                 default:
